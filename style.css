@@ -18,36 +18,59 @@ body {
     height: 600px;
     margin: 20px auto 0;
     background-color: #A6E3E9;
-    padding: 16px;
-    border-radius: 20px;
+    padding: 10px;
     box-shadow: 1px 2px 10px #aaaaaa;
 }
 
 .row {
     display: flex;
     flex-flow: row wrap;
-    background-color: #71C9CE;
+    background-color: white;
     flex: 1;
 }
 
 .square {
     flex: 1;
-    border: 1px solid rgba(27, 26, 26, 0.715);
 }
 
-button#number-square {
-    font-size: large;
+#change-grid,
+#random-color,
+#darkening,
+#reset {
+    font-size: 16px;
+    font-weight: 700;
     padding: 8px;
-    border-radius: 10px;
     cursor: pointer;
+    border: 2px solid black;
 }
 
-button#number-square:hover {
+#grid-size {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#change-grid:hover,
+#random-color:hover,
+#darkening:hover,
+#reset:hover {
     background-color: bisque;
 }
 
 h1 {
     margin: 16px 0;
-    color: blueviolet;
+    color: black;
     font-size: 36px;
+}
+
+.option {
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#reset,
+#random-color,
+#grid-size {
+    margin-right: 8px;
 }
